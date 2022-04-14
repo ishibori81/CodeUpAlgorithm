@@ -3,10 +3,9 @@
 int main()
 {
     int n;
-reload:
+    reload:
     scanf("%d", &n);
-    printf("%d\n", n);
-    if (n != 0)
-        goto reload;
+    if (n != 0)printf("%d\n", n);
+    if (n!=0) goto reload;
     return 0;
 }
