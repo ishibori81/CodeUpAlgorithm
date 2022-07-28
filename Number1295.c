@@ -2,18 +2,15 @@
 
 int main()
 {
-    char a = '\0';
-    while(1)//CodeUpはEOF使用
+    char chr;
+    while(scanf("%c", &chr) != EOF)//CodeUpはEOF使用
     {
-        if (a ==  '\n')
-            break;
-        a = getchar();
-        if (a >= 65 && a <= 90)
-            printf("%c", a+32);
-        else if (a >= 97 && a <= 122)
-            printf("%c", a-32);
+        if (chr >= 65 && chr <= 90)
+            printf("%c", chr+32);
+        else if (chr >= 97 && chr <= 122)
+            printf("%c", chr-32);
         else
-            printf("%c", a);
+            printf("%c", chr);
     }
     return 0;
 }
