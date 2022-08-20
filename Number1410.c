@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <string.h>
+//#include <string.h>
 int main(void)
 {
     char buffer[100001]={'0'};
     int open=0, close=0;
     fgets(buffer, 100001, stdin);
-    for(int i=0; i <strlen(buffer); i++)
+    for(int i=0; buffer[i] != '\0'; i++)
     {
         if(buffer[i] == '(')
             open++;
